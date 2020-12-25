@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset=UTF-8">
+		<title>Product</title>
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:100" rel="stylesheet">
+		<link rel="stylesheet" href="css/styles1.css">
+	</head>
+	<body>
+		<div id="shopify-section-2" class="shopify-section">
+			<div class="sec-section">
+				<div class="sec-container">
+					<h2 class="sec-heading">История Создания Нашей Мастерской</h2>
+					<div class="sec-flex-container">
+						<div class="sec-flex-item">
+							<div class="sec-flex-item-content">
+								<div class="scale">
+									<a href="#gtdg">
+										<img id="image" src="css/back4.jpg" alt class="sec-image scale" onClick="imgsrc();">
+									</a>
+								</div>
+							</div>
+							<script>
+								var i = 0;
+	
+								var image = document.getElementById("image");
+	
+								var imgs = new Array("css/back2.jpg","css/back3.jpg", "css/back4.jpg", "css/back1.jpg");
+	
+								function imgsrc() {
+									i++;
+									image.src = imgs[i % 4];
+								}
+							</script>
+						</div>
+						<div class="sec-flex-item">
+							<div class="sec-flex-item-content">
+								<div><p class="sec-subheading">Мы решили открыть эту мастерскую, чтобы создавать мебель и делать вас счастливыми.<br><br><br><br> Многие представляют себе идеальный интерьер, но не знают, как воплотить идеи в жизнь. Наша мастерская - именно то, что вам нужно.<br><br> Мы создаем необычную мебель вот уже 2 года. десятки самых разнообразных стульев, столов и комодов. каждый гарнитур индивидулен и сделан специально по эскизам наших клиентов.</p></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</body>
+</html>

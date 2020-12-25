@@ -8,9 +8,9 @@
 	</head>
 	<body>
 		<div class="navbar">
-			<a href="#home">Товары</a>
+			<a href="product.html">Товары</a>
 			<a href="#news">Новости</a>
-			<a href="#contact">Контакты</a>
+			<a href="contacts.html">Контакты</a>
 		</div>
 		<main class="content-wrapper" id="main-content" role="main">
 			<div id="home">
@@ -19,8 +19,38 @@
 						<h1 class="content-title">Мебель Как Искусство<h1>
 						<h2 class="content-heading">Создай свой неповторимый мир</h2>
 					</div>
+					<a class="back_to_top" title="Наверх">&uarr;</a>
 					<img src="css/main background.jpeg" alt class="content-image">
 				</div>
+				<script>
+					(function() {
+						'use strict';
+
+						function trackScroll() {
+							var scrolled = window.pageYOffset;
+							var coords = document.documentElement.clientHeight;
+
+								if (scrolled > coords) {
+									goTopBtn.classList.add('back_to_top-show');
+								}
+								if (scrolled < coords) {
+									goTopBtn.classList.remove('back_to_top-show');
+								}
+						}
+
+						function backToTop() {
+							if (window.pageYOffset > 0) {
+								window.scrollBy(0, -80);
+								setTimeout(backToTop, 0);
+							}
+						}
+
+						var goTopBtn = document.querySelector('.back_to_top');
+
+						window.addEventListener('scroll', trackScroll);
+						goTopBtn.addEventListener('click', backToTop);
+					})();
+				</script>
 				<div id="shopify-section-2" class="shopify-section">
 					<div class="sec-section">
 						<div class="sec-container">
@@ -138,9 +168,9 @@
 							<div class="fi-flex-container">
 								<div class="fi-flex-iteml">
 									<h1 class="fi-heading">
-										Любимы семьями
+										Нас выбирают
 										<br>
-										карьеристами  & карьеристами
+										  дружные семьи & успешные бизнесмены
 									<h1>
 									<div class="fi-slider">
 									<p class="fi-slider-text">"Прекрасная мебель ручной работы на заказ, все будет так, как вы пожелаете. Если у вас есть долгожданный замысел о шикарном столе в гостинную или же об очаровательном трюмо для дочери, вы нашли то, что нужно"</p>
@@ -179,20 +209,20 @@
 				<div id="footer">
 					<div class="top">
 						<div class="container">
-							<div class="left-section">
-								<div class="custom-footer-flex-container">
-									<div class="custom-footer-flex-item1">
-										<img src="css/logo1.jpg" class="custom-footer-logo">
-										<div class="address">60 лет ВЛКСМ Железногорск 662980</div>
-										© 2020 Larionov
-									</div>
-									<div class="custom-footer-flex-item2">
-										<div class="social-links flex align-items-center">
-											<img src="" class="icon instagram">
-										</div>
-									</div>
+							<div class="footer-flex-container">
+								<div class="footer-flex-iteml">
+									<img src="css/logo1.jpg" class="custom-footer-logo">
+									<div class="address">© Larionov furniture<br>2020</div>
 								</div>
-							</div>
+								<div class=footer-flex-itemc>
+									<!<img src="css/map1.png" class="icon instagram">
+									<div class="address">Контактный телефон<br>8-900-333-55-55<br><br>Электронная почта<br>larionovfurniture@gmail.com</div>
+								</div>
+								<div class=footer-flex-itemr>
+									<img src="css/map2.png" class="icon instagram">
+									<div class="address">60 лет ВЛКСМ 52 Железногорск <br>662980</div>
+								</div>
+							</div>	
 						</div>
 					</div>
 				</div>
