@@ -6,6 +6,7 @@ html, body, div, p, img, footer,section {
     margin: 0;
     padding: 0;
     border: 0;
+	vertical-align: baseline;
 }
 
 .container {

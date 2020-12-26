@@ -15,6 +15,47 @@ div{
 	display: block;
 }
 
+html, body, div, p, img, footer,section {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+	z-index: 99999;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+	text-decoration: none;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+	letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-weight: 1000;
+    font-size: 14px;
+	font-family: Montserrat;
+	transition-duration: 0.4s;
+}
+.navbar a:hover {
+    background: #f2f2f2;
+	text-decoration: none;
+    color: #333;
+	letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-weight: 1000;
+    font-size: 14px;
+	font-family: Montserrat
+}
+
+
 .product-wrap {
     margin: 0;
     overflow: visible;
