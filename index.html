@@ -12,7 +12,7 @@
 			<a href="#news">Новости</a>
 			<a href="contacts.html">Контакты</a>
 		</div>
-		<main class="content-wrapper" id="main-content" role="main">
+		<main class="content-w" id="main-content" role="main">
 			<div id="home">
 				<div id="shopify-section-1" class="shopify-section">
 					<div class="content-text">
@@ -216,8 +216,43 @@
 								</div>
 								<div class=footer-flex-itemc>
 									<!<img src="css/map1.png" class="icon instagram">
-									<div class="address">Контактный телефон<br>8-900-333-55-55<br><br>Электронная почта<br>larionovfurniture@gmail.com</div>
+									<div class="address">Контактный телефон<br>8-900-333-55-55<br><br>Электронная почта<br>larionovfurniture@gmail.com</div><br>
+									<button id="myBtn">Написать на почту</button>
+									<div id="myModal" class="modal">
+										<div class="modal-content">
+											<span class="close">&times;</span>
+											<p>larionovfurniture@gmail</p><br><br>
+											<p>перейдите по ссылке</p><br>
+											<a href="https://www.google.com/intl/ru/gmail/about/"><p>GMAIL вход</p></a>
+										</div>
+									</div>
 								</div>
+								<script>
+									let modal = document.getElementById("myModal");
+
+
+									let btn = document.getElementById("myBtn");
+
+
+									let span = document.getElementsByClassName("close")[0];
+
+
+									btn.onclick = function() {
+										modal.style.display = "block";
+									}
+
+
+									span.onclick = function() {
+										modal.style.display = "none";
+									}
+
+
+									window.onclick = function(event) {
+										if (event.target == modal) {
+											modal.style.display = "none";
+										}
+									}
+								</script>
 								<div class=footer-flex-itemr>
 									<img src="css/map2.png" class="icon instagram">
 									<div class="address">60 лет ВЛКСМ 52 Железногорск <br>662980</div>
